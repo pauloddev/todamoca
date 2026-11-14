@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toda Moça | Moda Feminina em Mangabeira – João Pessoa</title>
+<meta name="description" content="Toda Moça: desde 2010 vestindo momentos especiais. Peças selecionadas com elegância, loja em Mangabeira, João Pessoa, e envio para todo o Brasil.">
+<meta name="theme-color" content="#F6F3EE">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="Toda Moça">
+<meta property="og:title" content="Toda Moça | Moda Feminina em Mangabeira – João Pessoa">
+<meta property="og:description" content="Desde 2010 vestindo momentos especiais. Envio para todo o Brasil.">
+<meta property="og:image" content="https://raw.githubusercontent.com/pauloddev/todamoca/main/assets/img/marca/og-capa.jpg"><meta property="og:image:alt" content="Logo da Toda Moça"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://raw.githubusercontent.com/pauloddev/todamoca/main/assets/img/marca/og-capa.jpg">
+<link rel="icon" type="image/png" href="assets/img/marca/favicon.png"><link rel="apple-touch-icon" href="assets/img/marca/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/bodoni-moda-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ClothingStore","name":"Toda Moça","telephone":"+55 83 98748-8334","foundingDate":"2010",
+"address":{"@type":"PostalAddress","streetAddress":"R. Josefa Taveira, 933","addressLocality":"João Pessoa","addressRegion":"PB","postalCode":"58055-000","addressCountry":"BR"},
+"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"09:00","closes":"17:00"}],
+"sameAs":["https://www.instagram.com/todamoca/","https://www.tiktok.com/@tm_todamoca"]}
+</script>
+<style>
+@font-face{font-family:"Bodoni Moda";src:url(assets/fonts/bodoni-moda-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Bodoni Moda";src:url(assets/fonts/bodoni-moda-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Bodoni Moda";src:url(assets/fonts/bodoni-moda-latin-400-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"DM Sans";src:url(assets/fonts/dm-sans-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"DM Sans";src:url(assets/fonts/dm-sans-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+:root{
+  --preto:#1B1A19; --off:#F6F3EE; --branco:#FDFCFA; --nude:#B39783; --nude-claro:#E9DFD5; --pedra:#6E655D; --linha:#DDD4CA;
+  --serif:"Bodoni Moda",Didot,Georgia,serif; --sans:"DM Sans",system-ui,sans-serif;
+  --pad:clamp(1.25rem,5vw,4.5rem); --max:1240px; --ease:cubic-bezier(.22,.7,.18,1); --sec:clamp(5rem,10vw,9rem);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);font-size:1rem;line-height:1.7;color:var(--preto);background:var(--off);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.locked{overflow:hidden}
+img,video{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none} ul,ol{list-style:none;margin:0;padding:0} p{margin:0}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12;margin:0;letter-spacing:-.005em}
+.i{width:1.15em;height:1.15em;flex:none}
+:focus-visible{outline:1px solid currentColor;outline-offset:4px}
+.skip{position:absolute;left:-999px;top:0;background:var(--branco);padding:.8rem 1.2rem;z-index:200} .skip:focus{left:1rem;top:1rem}
+.wrap{width:min(var(--max),100% - 2*var(--pad));margin-inline:auto}
+
+/* alternância claro / escuro */
+.sec{position:relative;padding-block:var(--sec)}
+.sec--escuro{background:var(--preto);color:var(--off)}
+.sec--claro{background:var(--off);color:var(--preto)}
+.head{text-align:center;max-width:46rem;margin:0 auto clamp(2.8rem,6vw,4.5rem)}
+.kicker{display:inline-block;font:500 .72rem/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;margin-bottom:1.4rem;color:var(--nude)}
+.title{font-size:clamp(2.1rem,4.6vw,3.9rem)}
+.title em{font-style:italic}
+.lead{font-size:clamp(1rem,1.2vw,1.08rem);max-width:36rem;margin:1.3rem auto 0;color:var(--pedra)}
+.sec--escuro .lead{color:#C9BFB5}
+
+/* botões */
+.btn{--h:3.4rem;display:inline-flex;align-items:center;justify-content:center;gap:.7rem;min-height:var(--h);padding:0 2rem;font:500 .74rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;border:1px solid transparent;cursor:pointer;transition:background .45s var(--ease),color .45s var(--ease),border-color .45s var(--ease),transform .45s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn--preto{background:var(--preto);color:var(--off)} .btn--preto:hover{background:#000}
+.btn--linha{border-color:currentColor} .btn--linha:hover{background:var(--preto);color:var(--off);border-color:var(--preto)}
+.btn--claro{background:var(--off);color:var(--preto)} .btn--claro:hover{background:var(--nude-claro)}
+.sec--escuro .btn--linha:hover{background:var(--off);color:var(--preto);border-color:var(--off)}
+.btns{display:flex;flex-wrap:wrap;gap:1rem}
+.cta-row{display:flex;justify-content:center;margin-top:clamp(2.6rem,5vw,3.6rem)}
+
+/* intro */
+.intro{position:fixed;inset:0;z-index:150;background:var(--off);display:grid;place-items:center;transition:opacity 1s var(--ease),visibility 0s 1s}
+.intro.out{opacity:0;visibility:hidden}
+.intro img{width:min(52vw,280px);clip-path:inset(0 100% 0 0);animation:wipe 1.7s var(--ease) .3s forwards}
+.intro-line{display:block;width:0;height:1px;background:var(--nude);margin:2rem auto 0;animation:line 1.2s var(--ease) 1.3s forwards}
+@keyframes wipe{to{clip-path:inset(0 0 0 0)}} @keyframes line{to{width:6rem}}
+
+/* header */
+.hdr{position:fixed;inset:0 0 auto;z-index:90;transition:background .5s var(--ease),box-shadow .5s var(--ease)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;height:5.4rem;gap:2rem}
+.hdr.solid{background:rgba(246,243,238,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--linha)}
+.brand img{height:3.3rem;width:auto}
+.menu{display:flex;gap:2.4rem;font-size:.82rem;letter-spacing:.1em}
+.menu a{position:relative;padding-block:.4rem}
+.menu a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.menu a:hover::after{transform:scaleX(1);transform-origin:left}
+.hdr .btn{--h:2.8rem;padding:0 1.3rem;font-size:.68rem}
+.burger{display:none;width:2.8rem;height:2.8rem;border:0;background:none;color:inherit;cursor:pointer;position:relative}
+.burger span{position:absolute;left:.6rem;right:.6rem;height:1px;background:currentColor;transition:transform .45s var(--ease)}
+.burger span:nth-child(1){top:1.05rem} .burger span:nth-child(2){top:1.75rem}
+.nav-open .burger span:nth-child(1){transform:translateY(.35rem) rotate(45deg)} .nav-open .burger span:nth-child(2){transform:translateY(-.35rem) rotate(-45deg)}
+.drawer{position:fixed;inset:0;z-index:85;background:var(--off);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2rem;opacity:0;visibility:hidden;transition:opacity .5s var(--ease),visibility 0s .5s}
+.nav-open .drawer{opacity:1;visibility:visible;transition:opacity .5s var(--ease)}
+.drawer a{font-family:var(--serif);font-size:1.9rem}
+
+/* hero: foto da loja clarinha, dissolvendo no fundo */
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:8rem 0 6rem}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 30%;opacity:.26;filter:saturate(.75);
+  -webkit-mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.75) 45%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.75) 45%,transparent 100%);transform:scale(1.08);transition:transform 3s var(--ease)}
+.ready .hero-bg img{transform:scale(1)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(246,243,238,.55) 0%,rgba(246,243,238,0) 60%)}
+.hero-in{position:relative;z-index:1;max-width:52rem}
+.hero-logo{width:clamp(9rem,18vw,13rem);margin:0 auto 2.4rem}
+.hero h1{font-size:clamp(2.5rem,6vw,5.2rem)}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .ln>span{display:block;transform:translateY(105%);transition:transform 1.2s var(--ease)}
+.hero .sub{max-width:34rem;margin:1.8rem auto 2.6rem;color:var(--pedra);font-size:1.06rem}
+.hero .btns{justify-content:center}
+.hero-fade{opacity:0;transform:translateY(16px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+.ready .hero h1 .ln>span,.ready .hero-fade{opacity:1;transform:none}
+.ready .hero h1 .ln:nth-child(2)>span{transition-delay:.12s}
+.ready .hero-fade.d1{transition-delay:.4s} .ready .hero-fade.d2{transition-delay:.55s} .ready .hero-fade.d3{transition-delay:.7s}
+.selos{display:flex;justify-content:center;gap:clamp(1.2rem,4vw,3rem);margin-top:3.2rem;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--pedra)}
+.selos li{display:flex;align-items:center;gap:.6rem}
+.selos .i{color:var(--nude)}
+
+/* moldura inspirada no quadrado do logo */
+.moldura{position:relative;margin:0}
+.moldura::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1px solid var(--nude);z-index:0;transition:transform 1.2s var(--ease)}
+.moldura .m-in{position:relative;z-index:1;overflow:hidden;aspect-ratio:4/5;background:var(--nude-claro)}
+.moldura img{width:100%;height:100%;object-fit:cover}
+.moldura:hover::before{transform:translate(6px,-6px)}
+
+/* marca */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,8vw,7.5rem);align-items:center}
+.split .moldura{width:min(100%,27rem);justify-self:center}
+.prose .title{margin-bottom:1.8rem}
+.prose p{max-width:33rem;color:#C9BFB5} .prose p+p{margin-top:1.1rem}
+.sig{margin-top:2.4rem;padding-top:1.8rem;border-top:1px solid rgba(179,151,131,.4);display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.sig strong{font-family:var(--serif);font-weight:400;font-style:italic;font-size:1.8rem}
+.sig span{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--nude)}
+
+/* peças em destaque */
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,2.4vw,2rem)}
+.peca{margin:0;text-align:center}
+.peca .ph{overflow:hidden;aspect-ratio:3/4;background:var(--nude-claro)}
+.peca img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.peca:hover img{transform:scale(1.05)}
+.peca figcaption{font-family:var(--serif);font-size:1.45rem;margin-top:1.1rem}
+
+/* carrosséis */
+.carousel{--per:4;--gap:clamp(.9rem,1.6vw,1.4rem)}
+.track{display:flex;gap:var(--gap);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;scroll-behavior:smooth;outline:none}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 calc((100% - (var(--per) - 1)*var(--gap))/var(--per));scroll-snap-align:start}
+.card{margin:0;aspect-ratio:3/4;overflow:hidden;background:var(--nude-claro)}
+.card--45{aspect-ratio:4/5}
+.sec--escuro .card{background:#2A2826}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.card:hover img{transform:scale(1.05)}
+.car-nav{display:flex;align-items:center;gap:1.4rem;margin-top:1.8rem}
+.car-btn{width:3rem;height:3rem;flex:none;display:grid;place-items:center;border:1px solid currentColor;background:none;color:inherit;cursor:pointer;transition:background .4s,color .4s}
+.sec--claro .car-btn:hover{background:var(--preto);color:var(--off)} .sec--escuro .car-btn:hover{background:var(--off);color:var(--preto)}
+.car-bar{flex:1;height:1px;position:relative;background:var(--linha)} .sec--escuro .car-bar{background:#4A4541}
+.car-bar span{position:absolute;left:0;top:-1px;height:3px;width:20%;background:var(--nude);transition:left .5s var(--ease),width .5s var(--ease)}
+.vcard{margin:0;position:relative;aspect-ratio:9/16;overflow:hidden;background:#2A2826}
+.vcard video{width:100%;height:100%;object-fit:cover}
+.vplay{position:absolute;right:.8rem;bottom:.8rem;width:2.6rem;height:2.6rem;border-radius:50%;border:1px solid rgba(246,243,238,.9);background:rgba(27,26,25,.45);backdrop-filter:blur(6px);color:var(--off);display:grid;place-items:center;cursor:pointer}
+.vplay .i{grid-area:1/1} .vplay .i:last-child{display:none}
+.vcard.paused .vplay .i:first-child{display:none} .vcard.paused .vplay .i:last-child{display:block}
+
+/* vista */
+.tri{display:grid;grid-template-columns:1fr 1fr 1fr;gap:clamp(1.5rem,4vw,4rem);align-items:center}
+.tri-txt{text-align:center}
+.tri-txt .title{margin-bottom:1.6rem}
+.tri-txt p{max-width:21rem;margin:0 auto 2.4rem;color:var(--pedra)}
+
+/* clientes */
+.cli{display:grid;grid-template-columns:1.45fr 1fr;gap:clamp(.9rem,1.6vw,1.4rem)}
+.cli figure{margin:0;overflow:hidden;background:var(--nude-claro)}
+.cli img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.cli figure:hover img{transform:scale(1.04)}
+.cli-big{aspect-ratio:4/5}
+.cli-side{display:grid;grid-template-rows:1fr auto;gap:clamp(.9rem,1.6vw,1.4rem)}
+.cli-txt{border:1px solid var(--linha);padding:clamp(1.6rem,3vw,2.8rem);display:flex;flex-direction:column;justify-content:center}
+.cli-txt .title{font-size:clamp(1.8rem,3vw,2.8rem);margin-bottom:1.2rem}
+.cli-txt p{color:var(--pedra);max-width:26rem}
+.cli-txt a{margin-top:1.6rem;align-self:flex-start;display:inline-flex;gap:.6rem;align-items:center;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:.25rem}
+.cli-duo{display:grid;grid-template-columns:1fr 1fr;gap:clamp(.9rem,1.6vw,1.4rem)}
+.cli-duo figure{aspect-ratio:4/5}
+.cli-car{margin-top:clamp(.9rem,1.6vw,1.4rem)}
+.cli-car .carousel{--per:5}
+
+/* avaliações */
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#3A3734;border:1px solid #3A3734}
+.rev{background:var(--preto);padding:clamp(1.8rem,3vw,2.6rem);display:flex;flex-direction:column;gap:1.1rem}
+.rev .stars{color:#5A544F;letter-spacing:.2em;font-size:.9rem} .rev .st.on{color:var(--nude)}
+.rev blockquote{margin:0;font-family:var(--serif);font-size:1.25rem;line-height:1.45;flex:1}
+.rev cite{font-style:normal;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:#C9BFB5}
+.rev-src{text-align:center;margin-top:1.6rem;font-size:.8rem;color:#9C938A;letter-spacing:.06em}
+
+/* passos */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,3vw,2.4rem)}
+.step{text-align:center;padding:clamp(2.2rem,4vw,3rem) clamp(1.4rem,2.6vw,2.2rem);border:1px solid var(--linha);background:var(--branco);transition:border-color .5s var(--ease),transform .6s var(--ease)}
+.step:hover{border-color:var(--nude);transform:translateY(-4px)}
+.step-n{display:block;font-family:var(--serif);font-size:2.6rem;line-height:1;color:var(--nude)}
+.step .i{display:block;width:1.8rem;height:1.8rem;margin:1.2rem auto 1.3rem}
+.step h3{font-size:1.35rem;margin-bottom:.7rem} .step p{font-size:.95rem;color:var(--pedra)}
+
+/* diferenciais */
+.difs{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#3A3734;border:1px solid #3A3734}
+.dif{background:var(--preto);padding:clamp(2rem,3vw,2.6rem) 1.4rem;text-align:center;transition:background .5s var(--ease)}
+.dif:hover{background:#24221F}
+.dif .i{display:block;width:1.8rem;height:1.8rem;margin:0 auto 1.2rem;color:var(--nude)}
+.dif h3{font-size:1.25rem;margin-bottom:.7rem} .dif p{font-size:.9rem;color:#C9BFB5}
+
+/* loja */
+.loja{display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,7vw,6.5rem);align-items:center}
+.loja .moldura{width:min(100%,28rem);justify-self:center}
+.loja-info .title{margin-bottom:1.8rem}
+.addr{display:flex;gap:.9rem;align-items:flex-start;font-size:1.02rem} .addr .i{color:var(--nude);margin-top:.3rem}
+.hours{margin:2rem 0;border-top:1px solid var(--linha)}
+.hours-h{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+.hours-h strong{font-family:var(--serif);font-weight:400;font-size:1.3rem;display:flex;gap:.7rem;align-items:center}
+.status{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;display:inline-flex;align-items:center;gap:.5rem}
+.status::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:#B8AEA5}
+.status.open::before{background:#3F9E6A;box-shadow:0 0 0 4px rgba(63,158,106,.16)}
+.hours li{display:flex;justify-content:space-between;padding:.58rem 0;border-bottom:1px solid var(--linha);font-size:.96rem}
+.hours li.today{font-weight:500;color:#8A6B55}
+.map{margin-top:clamp(4.5rem,8vw,6.5rem);border:1px solid var(--linha);padding:.6rem;background:var(--branco)}
+.map-in{position:relative;aspect-ratio:21/8;overflow:hidden;background:var(--nude-claro)}
+.map-stage{position:absolute;inset:0}
+.map-art{position:absolute;inset:0;width:100%;height:100%}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;opacity:0;transition:opacity .8s var(--ease);filter:grayscale(.35)}
+.map.live iframe{opacity:1}
+.map-pin{position:absolute;left:62%;top:46%;transform:translate(-50%,-100%);color:var(--preto)} .map.live .map-pin{display:none}
+.map-pin svg{width:3rem;height:3rem}
+.map-card{position:absolute;left:clamp(.8rem,2.4vw,2rem);top:50%;transform:translateY(-50%);background:var(--branco);padding:clamp(1.3rem,2.4vw,2rem);width:min(22rem,calc(100% - 1.6rem));box-shadow:0 20px 40px -24px rgba(0,0,0,.35);border:1px solid var(--linha);z-index:2}
+.map-card h3{font-size:1.3rem;margin-bottom:.6rem} .map-card p{font-size:.94rem;margin-bottom:1.2rem;color:var(--pedra)}
+.map-card .btns{gap:.6rem} .map-card .btn{--h:2.8rem;padding:0 1.1rem;font-size:.64rem}
+
+/* final + rodapé */
+.final{text-align:center}
+.final .logo-f{width:min(40vw,11rem);margin:0 auto 2.6rem}
+.final .title{font-size:clamp(2.3rem,5.4vw,4.6rem);max-width:18ch;margin:0 auto}
+.final p{margin:1.5rem auto 2.6rem;max-width:30rem;color:#C9BFB5}
+.ftr{background:var(--off);padding:clamp(3.5rem,7vw,5rem) 0 2rem;font-size:.92rem}
+.ftr-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:2.5rem}
+.ftr h4{font-family:var(--serif);font-weight:400;font-size:1.2rem;margin:0 0 1rem}
+.ftr li+li{margin-top:.5rem} .ftr a:hover{color:#8A6B55}
+.ftr .logo-ft{width:6.5rem}
+.ftr .soc{display:flex;gap:.7rem;margin-top:1.4rem}
+.ftr .soc a{width:2.6rem;height:2.6rem;border:1px solid var(--preto);display:grid;place-items:center;transition:background .4s,color .4s}
+.ftr .soc a:hover{background:var(--preto);color:var(--off)}
+.ftr-bot{margin-top:3rem;padding-top:1.6rem;border-top:1px solid var(--linha);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.8rem;color:var(--pedra)}
+
+.fab{position:fixed;right:clamp(1rem,2.4vw,1.8rem);bottom:clamp(1rem,2.4vw,1.8rem);z-index:80;width:3.6rem;height:3.6rem;border-radius:50%;background:var(--preto);color:var(--off);display:grid;place-items:center;box-shadow:0 0 0 3px var(--off),0 16px 30px -10px rgba(0,0,0,.4);transition:transform .5s var(--ease),opacity .5s;opacity:0;transform:scale(.6);pointer-events:none}
+.fab.show{opacity:1;transform:none;pointer-events:auto} .fab:hover{transform:scale(1.07)} .fab .i{width:1.6rem;height:1.6rem}
+
+/* transições ao rolar: textos sobem, imagens se revelam */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal-img{clip-path:inset(10% 10% 10% 10%);opacity:0;transition:clip-path 1.6s var(--ease),opacity 1.2s var(--ease)}
+.reveal-img.in{clip-path:inset(0 0 0 0);opacity:1}
+.moldura.reveal-img{clip-path:none;opacity:0;transform:translateY(30px);transition:opacity 1.2s var(--ease),transform 1.4s var(--ease)}
+.moldura.reveal-img.in{opacity:1;transform:none}
+.moldura.reveal-img .m-in{clip-path:inset(12% 12% 12% 12%);transition:clip-path 1.6s var(--ease) .1s}
+.moldura.reveal-img.in .m-in{clip-path:inset(0)}
+.d2{transition-delay:.12s} .d3{transition-delay:.24s} .d4{transition-delay:.36s} .d5{transition-delay:.48s}
+
+@media (max-width:1080px){
+  .menu{gap:1.4rem} .difs{grid-template-columns:repeat(3,1fr)} .ftr-grid{grid-template-columns:1fr 1fr}
+  .carousel{--per:3} .cli-car .carousel{--per:4} .revs{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .menu,.hdr-cta{display:none} .burger{display:block}
+  .split,.loja,.cli{grid-template-columns:1fr}
+  .split .moldura,.loja .moldura{width:min(80%,22rem)}
+  .prose,.loja-info{text-align:center} .prose p{margin-inline:auto} .sig{justify-content:center}
+  .addr{justify-content:center;text-align:left} .loja-info .btns{justify-content:center}
+  .tri{grid-template-columns:1fr 1fr} .tri-txt{grid-column:1/-1;order:-1}
+  .steps{grid-template-columns:1fr}
+  .cli-txt{text-align:center;align-items:center} .cli-txt a{align-self:center}
+  .map-in{aspect-ratio:auto;display:flex;flex-direction:column} .map-stage{position:relative;aspect-ratio:4/3}
+  .map-card{position:relative;left:auto;top:auto;transform:none;width:100%;box-shadow:none;border:0;border-top:1px solid var(--linha);text-align:center} .map-card .btns{justify-content:center}
+}
+@media (max-width:640px){
+  .trio{grid-template-columns:1fr 1fr} .trio .peca:last-child{grid-column:1/-1} .trio .peca:last-child .ph{aspect-ratio:4/3}
+  .carousel{--per:1.6} .cli-car .carousel{--per:2.3}
+  .revs{grid-template-columns:1fr} .difs{grid-template-columns:1fr 1fr} .difs .dif:last-child{grid-column:1/-1}
+  .ftr-grid{grid-template-columns:1fr;text-align:center} .ftr .logo-ft{margin:0 auto} .ftr .soc{justify-content:center} .ftr-bot{justify-content:center;text-align:center}
+  .btns{flex-direction:column;align-items:stretch} .hours-h{flex-direction:column;gap:.5rem}
+  .selos{flex-direction:column;align-items:center;gap:.9rem}
+  .peca figcaption{font-size:1.1rem;white-space:nowrap}
+  .moldura::before{inset:-8px 8px 8px -8px} .tri{gap:1rem} .tri .moldura::before{display:none}
+  .cli-txt a{font-size:.68rem;letter-spacing:.12em;white-space:nowrap}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .reveal,.reveal-img,.moldura.reveal-img .m-in{opacity:1;transform:none;clip-path:none}
+}
+</style>
+</head>
+<body class="locked">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="intro" id="intro" aria-hidden="true"><div><img src="assets/img/marca/logo-preto.png" alt="" width="522" height="448"><span class="intro-line"></span></div></div>
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#topo" aria-label="Toda Moça, início"><img src="assets/img/marca/logo-preto.png" alt="Toda Moça" width="522" height="448"></a>
+    <nav aria-label="Principal"><ul class="menu"><li><a href="#marca">A marca</a></li><li><a href="#novidades">Novidades</a></li><li><a href="#clientes">Clientes</a></li><li><a href="#avaliacoes">Avaliações</a></li><li><a href="#loja">A loja</a></li></ul></nav>
+    <a class="btn btn--preto hdr-cta" href="https://wa.me/5583987488334?text=Ol%C3%A1%21%20Conheci%20a%20Toda%20Mo%C3%A7a%20pelo%20site%20e%20gostaria%20de%20conhecer%20as%20novidades." target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6a9.3 9.3 0 0 0-8 14.1L2.7 21.4l4.8-1.3A9.3 9.3 0 1 0 12 2.6Z"/><path d="M8.6 7.9c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2 0 .5-.1.7l-.5.6c-.1.2-.2.4 0 .6.4.8 1 1.5 1.8 2.1.6.4 1 .6 1.3.7.2.1.4 0 .6-.1l.6-.8c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .5-.2 1.3-.8 1.7-.6.4-1.3.6-2.2.4-1-.2-2.4-.8-3.9-2.1-1.7-1.5-2.4-3-2.6-3.8-.2-.9 0-1.7.5-2.4Z" fill="currentColor" stroke="none"/></svg> WhatsApp</a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span></button>
+  </div>
+</header>
+<nav class="drawer" id="drawer" aria-label="Menu móvel">
+  <a href="#marca">A marca</a><a href="#novidades">Novidades</a><a href="#clientes">Clientes</a><a href="#avaliacoes">Avaliações</a><a href="#loja">A loja</a>
+  <a class="btn btn--preto" href="https://wa.me/5583987488334?text=Ol%C3%A1%21%20Conheci%20a%20Toda%20Mo%C3%A7a%20pelo%20site%20e%20gostaria%20de%20conhecer%20as%20novidades." target="_blank" rel="noopener" style="font-family:var(--sans)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6a9.3 9.3 0 0 0-8 14.1L2.7 21.4l4.8-1.3A9.3 9.3 0 1 0 12 2.6Z"/><path d="M8.6 7.9c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2 0 .5-.1.7l-.5.6c-.1.2-.2.4 0 .6.4.8 1 1.5 1.8 2.1.6.4 1 .6 1.3.7.2.1.4 0 .6-.1l.6-.8c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .5-.2 1.3-.8 1.7-.6.4-1.3.6-2.2.4-1-.2-2.4-.8-3.9-2.1-1.7-1.5-2.4-3-2.6-3.8-.2-.9 0-1.7.5-2.4Z" fill="currentColor" stroke="none"/></svg> Falar pelo WhatsApp</a>
+</nav>
+
+<main id="conteudo">
+<section class="sec sec--claro hero" id="topo">
+  <div class="hero-bg" aria-hidden="true"><img src="assets/img/marca/hero-loja.webp" alt="" width="1215" height="1620" fetchpriority="high"></div>
+  <div class="wrap hero-in">
+    <img class="hero-logo hero-fade" src="assets/img/marca/logo-preto.png" alt="Toda Moça" width="522" height="448">
+    <h1><span class="ln"><span>Desde 2010 vestindo</span></span><span class="ln"><span><em>momentos especiais.</em></span></span></h1>
+    <p class="sub hero-fade d1">Peças selecionadas com elegância, na loja em Mangabeira e com envio para todo o Brasil.</p>
+    <div class="btns hero-fade d2">
+      <a class="btn btn--preto" href="#novidades">Ver as novidades</a>
+      <a class="btn btn--linha" href="https://wa.me/5583987488334?text=Ol%C3%A1%21%20Conheci%20a%20Toda%20Mo%C3%A7a%20pelo%20site%20e%20gostaria%20de%20conhecer%20as%20novidades." target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6a9.3 9.3 0 0 0-8 14.1L2.7 21.4l4.8-1.3A9.3 9.3 0 1 0 12 2.6Z"/><path d="M8.6 7.9c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2 0 .5-.1.7l-.5.6c-.1.2-.2.4 0 .6.4.8 1 1.5 1.8 2.1.6.4 1 .6 1.3.7.2.1.4 0 .6-.1l.6-.8c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .5-.2 1.3-.8 1.7-.6.4-1.3.6-2.2.4-1-.2-2.4-.8-3.9-2.1-1.7-1.5-2.4-3-2.6-3.8-.2-.9 0-1.7.5-2.4Z" fill="currentColor" stroke="none"/></svg> Falar pelo WhatsApp</a>
+    </div>
+    <ul class="selos hero-fade d3"><li><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.3s-6.6-6-6.6-11.1a6.6 6.6 0 0 1 13.2 0c0 5.1-6.6 11.1-6.6 11.1Z"/><circle cx="12" cy="10.2" r="2.4"/></svg> João Pessoa · PB</li><li><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.5 12 3.2l8.5 4.3v9L12 20.8l-8.5-4.3Z"/><path d="M3.5 7.5 12 11.8l8.5-4.3M12 11.8v9"/></svg> Envio para todo o Brasil</li></ul>
+  </div>
+</section>
+
+<section class="sec sec--escuro" id="marca">
+  <div class="wrap split">
+    <figure class="moldura reveal-img"><div class="m-in"><img src="assets/img/marca/cristiany-seixas.webp" alt="Cristiany Seixas, CEO da Toda Moça" width="1000" height="1250" loading="lazy" decoding="async"></div></figure>
+    <div class="prose">
+      <p class="kicker reveal">A Toda Moça</p>
+      <h2 class="title reveal d2">Cada peça escolhida para o <em>seu</em> momento.</h2>
+      <p class="reveal d3">Desde 2010, a Toda Moça veste mulheres de João Pessoa nos dias que merecem ser lembrados, do encontro de sábado à festa mais esperada do ano.</p>
+      <p class="reveal d3">As peças chegam à loja depois de uma seleção cuidadosa, com olhar para tecido, caimento e elegância. E quem está longe recebe em casa, com envio para todo o Brasil.</p>
+      <div class="sig reveal d4"><strong>Cristiany Seixas</strong><span>CEO da Toda Moça</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--claro" id="pecas">
+  <div class="wrap">
+    <div class="head"><p class="kicker reveal">Seleção da loja</p><h2 class="title reveal d2">Peças selecionadas com elegância.</h2></div>
+    <div class="trio"><figure class="peca reveal d1"><div class="ph"><img src="assets/img/produtos/corsets-renda.webp" alt="Corsets de renda branco, preto e preto com nude sobre o sofá da loja" width="900" height="1200" loading="lazy" decoding="async"></div><figcaption>Corsets de renda</figcaption></figure><figure class="peca reveal d2"><div class="ph"><img src="assets/img/produtos/composicoes.webp" alt="Três composições com corset de renda, calça e bolsa" width="900" height="1200" loading="lazy" decoding="async"></div><figcaption>Composições</figcaption></figure><figure class="peca reveal d3"><div class="ph"><img src="assets/img/produtos/vitrine-pastel.webp" alt="Vestidos e conjuntos em tons pastel nos manequins da loja" width="900" height="1200" loading="lazy" decoding="async"></div><figcaption>Vitrine</figcaption></figure></div>
+  </div>
+</section>
+
+<section class="sec sec--escuro" id="novidades">
+  <div class="wrap">
+    <div class="head"><p class="kicker reveal">Novidades</p><h2 class="title reveal d2">Looks que acabaram de chegar.</h2>
+      <p class="lead reveal d3">Gostou de algum? Mande a foto no WhatsApp e a equipe mostra tamanhos e cores.</p></div>
+    <div class="reveal"><div class="carousel " data-carousel id="car-looks" aria-roledescription="carrossel" aria-label="Looks da Toda Moça">
+  <ul class="track" tabindex="0"><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-praia.webp" alt="Modelo na praia com conjunto plissado azul claro e bolsa de bambu" width="900" height="1200" decoding="async"></figure></li><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-vinho-loja.webp" alt="Modelo com vestido vinho de gola alta na porta da loja" width="900" height="1200" decoding="async"></figure></li><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-preto-bege.webp" alt="Modelo com body preto e calça cargo bege na loja" width="900" height="1200" decoding="async"></figure></li><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-zebra.webp" alt="Modelo com body zebrado de um ombro e saia de franjas" width="900" height="1200" decoding="async"></figure></li><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-couro.webp" alt="Modelo com vestido trench vinho de couro" width="900" height="1200" decoding="async"></figure></li><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-jeans-corset.webp" alt="Modelo com corset jeans e short escuro" width="900" height="1200" decoding="async"></figure></li><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-listrado.webp" alt="Modelo com vestido listrado azul e branco na loja" width="900" height="1200" decoding="async"></figure></li><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-branco-conjunto.webp" alt="Modelo com conjunto branco de calça pantalona" width="900" height="1200" decoding="async"></figure></li><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-preto-sofa.webp" alt="Modelo sentada com body preto e calça bege" width="900" height="1200" decoding="async"></figure></li><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-vinho-saia.webp" alt="Modelo com vestido vinho de saia balonê" width="900" height="1200" decoding="async"></figure></li><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-zebra-inteiro.webp" alt="Modelo com body zebrado, saia de franjas e bota preta" width="900" height="1200" decoding="async"></figure></li><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-couro-inteiro.webp" alt="Modelo com vestido trench vinho e bota preta" width="900" height="1200" decoding="async"></figure></li><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-amarelo.webp" alt="Modelo com conjunto amarelo de cropped e saia longa" width="900" height="1200" decoding="async"></figure></li><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-couro-costas.webp" alt="Modelo de costas com macaquinho de couro vinho" width="900" height="1200" decoding="async"></figure></li><li class="slide"><figure class="card"><img data-src="assets/img/looks/look-jeans-detalhe.webp" alt="Detalhe do corset jeans com colar dourado" width="900" height="1200" decoding="async"></figure></li></ul>
+  <div class="car-nav"><button class="car-btn" data-prev aria-label="Anterior"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5.5 8.5 12l6.5 6.5"/></svg></button><div class="car-bar"><span></span></div><button class="car-btn" data-next aria-label="Próximo"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5.5 15.5 12 9 18.5"/></svg></button></div>
+</div></div>
+    <div class="cta-row reveal"><a class="btn btn--claro" href="https://wa.me/5583987488334?text=Ol%C3%A1%21%20Vi%20as%20novidades%20no%20site%20da%20Toda%20Mo%C3%A7a%20e%20quero%20conhecer%20as%20pe%C3%A7as." target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6a9.3 9.3 0 0 0-8 14.1L2.7 21.4l4.8-1.3A9.3 9.3 0 1 0 12 2.6Z"/><path d="M8.6 7.9c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2 0 .5-.1.7l-.5.6c-.1.2-.2.4 0 .6.4.8 1 1.5 1.8 2.1.6.4 1 .6 1.3.7.2.1.4 0 .6-.1l.6-.8c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .5-.2 1.3-.8 1.7-.6.4-1.3.6-2.2.4-1-.2-2.4-.8-3.9-2.1-1.7-1.5-2.4-3-2.6-3.8-.2-.9 0-1.7.5-2.4Z" fill="currentColor" stroke="none"/></svg> Quero conhecer as novidades</a></div>
+  </div>
+</section>
+
+<section class="sec sec--claro" id="vista">
+  <div class="wrap tri">
+    <figure class="moldura reveal-img"><div class="m-in"><img src="assets/img/looks/look-amarelo-sentada.webp" alt="Modelo sentada com conjunto amarelo de renda e saia de chiffon" width="900" height="1200" loading="lazy" decoding="async"></div></figure>
+    <div class="tri-txt"><p class="kicker reveal">Ocasiões especiais</p><h2 class="title reveal d2">Vista o momento.</h2>
+      <p class="reveal d3">Para o aniversário, o jantar, a viagem ou o evento que você esperou o ano todo, existe uma peça pensada para ele.</p>
+      <a class="btn btn--preto reveal d4" href="https://wa.me/5583987488334?text=Ol%C3%A1%21%20Conheci%20a%20Toda%20Mo%C3%A7a%20pelo%20site%20e%20gostaria%20de%20conhecer%20as%20novidades." target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6a9.3 9.3 0 0 0-8 14.1L2.7 21.4l4.8-1.3A9.3 9.3 0 1 0 12 2.6Z"/><path d="M8.6 7.9c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2 0 .5-.1.7l-.5.6c-.1.2-.2.4 0 .6.4.8 1 1.5 1.8 2.1.6.4 1 .6 1.3.7.2.1.4 0 .6-.1l.6-.8c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .5-.2 1.3-.8 1.7-.6.4-1.3.6-2.2.4-1-.2-2.4-.8-3.9-2.1-1.7-1.5-2.4-3-2.6-3.8-.2-.9 0-1.7.5-2.4Z" fill="currentColor" stroke="none"/></svg> Montar meu look</a></div>
+    <figure class="moldura reveal-img"><div class="m-in"><img src="assets/img/looks/look-paetes.webp" alt="Modelo com cropped e saia de paetês brancos com capa de chiffon" width="900" height="1200" loading="lazy" decoding="async"></div></figure>
+  </div>
+</section>
+
+<section class="sec sec--escuro" id="videos">
+  <div class="wrap">
+    <div class="head"><p class="kicker reveal">Em movimento</p><h2 class="title reveal d2">Veja o caimento de perto.</h2></div>
+    <div class="reveal"><div class="carousel " data-carousel id="car-videos" aria-roledescription="carrossel" aria-label="Vídeos das peças">
+  <ul class="track" tabindex="0"><li class="slide"><figure class="vcard"><video muted loop playsinline preload="none" poster="assets/video/conjunto-off-white.jpg" aria-label="Conjunto off-white em movimento"><source src="assets/video/conjunto-off-white.mp4" type="video/mp4"></video><button class="vplay" aria-label="Pausar vídeo" data-vtoggle><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 5.6v12.8M15.6 5.6v12.8"/></svg><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.6v12.8L18.4 12Z" fill="currentColor" stroke="none"/></svg></button></figure></li><li class="slide"><figure class="vcard"><video muted loop playsinline preload="none" poster="assets/video/vermelho-franzido.jpg" aria-label="Conjunto vermelho franzido"><source src="assets/video/vermelho-franzido.mp4" type="video/mp4"></video><button class="vplay" aria-label="Pausar vídeo" data-vtoggle><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 5.6v12.8M15.6 5.6v12.8"/></svg><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.6v12.8L18.4 12Z" fill="currentColor" stroke="none"/></svg></button></figure></li><li class="slide"><figure class="vcard"><video muted loop playsinline preload="none" poster="assets/video/vinho-capa.jpg" aria-label="Vestido vinho com capa"><source src="assets/video/vinho-capa.mp4" type="video/mp4"></video><button class="vplay" aria-label="Pausar vídeo" data-vtoggle><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 5.6v12.8M15.6 5.6v12.8"/></svg><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.6v12.8L18.4 12Z" fill="currentColor" stroke="none"/></svg></button></figure></li><li class="slide"><figure class="vcard"><video muted loop playsinline preload="none" poster="assets/video/couro-cowboy.jpg" aria-label="Looks de couro com chapéu"><source src="assets/video/couro-cowboy.mp4" type="video/mp4"></video><button class="vplay" aria-label="Pausar vídeo" data-vtoggle><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 5.6v12.8M15.6 5.6v12.8"/></svg><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.6v12.8L18.4 12Z" fill="currentColor" stroke="none"/></svg></button></figure></li><li class="slide"><figure class="vcard"><video muted loop playsinline preload="none" poster="assets/video/corsets-poa.jpg" aria-label="Corsets vermelho e de poá"><source src="assets/video/corsets-poa.mp4" type="video/mp4"></video><button class="vplay" aria-label="Pausar vídeo" data-vtoggle><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 5.6v12.8M15.6 5.6v12.8"/></svg><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.6v12.8L18.4 12Z" fill="currentColor" stroke="none"/></svg></button></figure></li><li class="slide"><figure class="vcard"><video muted loop playsinline preload="none" poster="assets/video/longo-creme.jpg" aria-label="Vestido longo creme"><source src="assets/video/longo-creme.mp4" type="video/mp4"></video><button class="vplay" aria-label="Pausar vídeo" data-vtoggle><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 5.6v12.8M15.6 5.6v12.8"/></svg><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.6v12.8L18.4 12Z" fill="currentColor" stroke="none"/></svg></button></figure></li><li class="slide"><figure class="vcard"><video muted loop playsinline preload="none" poster="assets/video/vestidos-curtos.jpg" aria-label="Vestidos curtos em tons neutros"><source src="assets/video/vestidos-curtos.mp4" type="video/mp4"></video><button class="vplay" aria-label="Pausar vídeo" data-vtoggle><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 5.6v12.8M15.6 5.6v12.8"/></svg><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.6v12.8L18.4 12Z" fill="currentColor" stroke="none"/></svg></button></figure></li><li class="slide"><figure class="vcard"><video muted loop playsinline preload="none" poster="assets/video/conjunto-branco.jpg" aria-label="Conjunto branco de calça"><source src="assets/video/conjunto-branco.mp4" type="video/mp4"></video><button class="vplay" aria-label="Pausar vídeo" data-vtoggle><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 5.6v12.8M15.6 5.6v12.8"/></svg><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.6v12.8L18.4 12Z" fill="currentColor" stroke="none"/></svg></button></figure></li><li class="slide"><figure class="vcard"><video muted loop playsinline preload="none" poster="assets/video/corset-preto-jeans.jpg" aria-label="Corset preto com calça jeans"><source src="assets/video/corset-preto-jeans.mp4" type="video/mp4"></video><button class="vplay" aria-label="Pausar vídeo" data-vtoggle><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 5.6v12.8M15.6 5.6v12.8"/></svg><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.6v12.8L18.4 12Z" fill="currentColor" stroke="none"/></svg></button></figure></li><li class="slide"><figure class="vcard"><video muted loop playsinline preload="none" poster="assets/video/camiseta-paete.jpg" aria-label="Camiseta com saia de paetê"><source src="assets/video/camiseta-paete.mp4" type="video/mp4"></video><button class="vplay" aria-label="Pausar vídeo" data-vtoggle><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 5.6v12.8M15.6 5.6v12.8"/></svg><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.6v12.8L18.4 12Z" fill="currentColor" stroke="none"/></svg></button></figure></li></ul>
+  <div class="car-nav"><button class="car-btn" data-prev aria-label="Anterior"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5.5 8.5 12l6.5 6.5"/></svg></button><div class="car-bar"><span></span></div><button class="car-btn" data-next aria-label="Próximo"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5.5 15.5 12 9 18.5"/></svg></button></div>
+</div></div>
+  </div>
+</section>
+
+<section class="sec sec--claro" id="clientes">
+  <div class="wrap">
+    <div class="cli">
+      <figure class="cli-big reveal-img"><img src="assets/img/clientes/cliente-02.webp" alt="Cliente com top branco e saia longa fendada segurando bolsa dourada" width="1080" height="1350" loading="lazy" decoding="async"></figure>
+      <div class="cli-side">
+        <div class="cli-txt reveal">
+          <p class="kicker">Clientes Toda Moça</p>
+          <h2 class="title">Quem veste, <em>indica.</em></h2>
+          <p>Clientes reais com as peças da Toda Moça, em festas, viagens e no dia a dia.</p>
+          <a href="https://www.instagram.com/todamoca/" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.4" cy="6.6" r=".9" fill="currentColor" stroke="none"/></svg> Marque @todamoca no seu look</a>
+        </div>
+        <div class="cli-duo"><figure class="reveal-img d2"><img src="assets/img/clientes/cliente-03.webp" alt="Cliente com camisa branca de mangas bufantes e bolsa laranja" width="1080" height="1350" loading="lazy" decoding="async"></figure><figure class="reveal-img d3"><img src="assets/img/clientes/cliente-14.webp" alt="Cliente com vestido amarelo entre plantas" width="1080" height="1350" loading="lazy" decoding="async"></figure></div>
+      </div>
+    </div>
+    <div class="cli-car reveal"><div class="carousel " data-carousel id="car-clientes" aria-roledescription="carrossel" aria-label="Clientes da Toda Moça">
+  <ul class="track" tabindex="0"><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-19.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-01.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-04.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-05.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-06.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-07.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-08.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-09.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-10.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-11.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-12.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-13.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-15.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-16.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-17.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-18.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li><li class="slide"><figure class="card card--45"><img data-src="assets/img/clientes/cliente-20.webp" alt="Cliente da Toda Moça" width="1080" height="1350" decoding="async"></figure></li></ul>
+  <div class="car-nav"><button class="car-btn" data-prev aria-label="Anterior"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5.5 8.5 12l6.5 6.5"/></svg></button><div class="car-bar"><span></span></div><button class="car-btn" data-next aria-label="Próximo"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5.5 15.5 12 9 18.5"/></svg></button></div>
+</div></div>
+  </div>
+</section>
+
+<section class="sec sec--escuro" id="avaliacoes">
+  <div class="wrap">
+    <div class="head"><p class="kicker reveal">Avaliações</p><h2 class="title reveal d2">O que dizem as clientes.</h2></div>
+    <ul class="revs"><li class="rev reveal d1"><div class="stars" aria-label="5 de 5 estrelas"><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span></div><blockquote>“Ótimo atendimento e tem cada modelo lindo q da vontade de levar tudooo! E o melhor preço maravilhoso!”</blockquote><cite>Juliana Alcantara</cite></li><li class="rev reveal d2"><div class="stars" aria-label="5 de 5 estrelas"><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span></div><blockquote>“Amei tudo, ótimo atendimento, preços bom..”</blockquote><cite>Milene Alves</cite></li><li class="rev reveal d3"><div class="stars" aria-label="5 de 5 estrelas"><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span></div><blockquote>“Preços excelentes”</blockquote><cite>Patricia Rodrigues</cite></li><li class="rev reveal d1"><div class="stars" aria-label="5 de 5 estrelas"><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span></div><blockquote>“Loja top!!”</blockquote><cite>Jessyca Soares</cite></li><li class="rev reveal d2"><div class="stars" aria-label="4 de 5 estrelas"><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span><span class="st">★</span></div><blockquote>“Muito bom”</blockquote><cite>Normanda Carvalho</cite></li><li class="rev reveal d3"><div class="stars" aria-label="5 de 5 estrelas"><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span><span class="st on">★</span></div><blockquote>“Loja show”</blockquote><cite>GdT 250</cite></li></ul>
+    <p class="rev-src reveal">Avaliações publicadas no Google.</p>
+  </div>
+</section>
+
+<section class="sec sec--claro" id="como">
+  <div class="wrap">
+    <div class="head"><p class="kicker reveal">Como comprar</p><h2 class="title reveal d2">Seu próximo look começa aqui.</h2></div>
+    <ol class="steps"><li class="step reveal d1"><span class="step-n">01</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 12S6 5.6 12 5.6 21.4 12 21.4 12 18 18.4 12 18.4 2.6 12 2.6 12Z"/><circle cx="12" cy="12" r="2.8"/></svg><h3>Descubra suas peças</h3><p>Veja os looks aqui no site, no Instagram ou no TikTok.</p></li><li class="step reveal d2"><span class="step-n">02</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v10.2H9.6L5.6 19v-3.3H4Z"/><path d="M8 9.6h8M8 12.2h5"/></svg><h3>Fale com a gente no WhatsApp</h3><p>Mande a foto da peça e tire suas dúvidas com a equipe.</p></li><li class="step reveal d3"><span class="step-n">03</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7.6a1.9 1.9 0 1 1 1.9-1.9c0 1-1 1.4-1.9 2.2v1.3L3.5 15.6a1.1 1.1 0 0 0 .7 2h15.6a1.1 1.1 0 0 0 .7-2L12 9.2"/></svg><h3>Escolha seu próximo look</h3><p>Venha provar na loja em Mangabeira ou combine o envio.</p></li></ol>
+    <div class="cta-row reveal"><a class="btn btn--preto" href="https://wa.me/5583987488334?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Toda%20Mo%C3%A7a%20e%20quero%20comprar%20com%20envio%20para%20a%20minha%20cidade." target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6a9.3 9.3 0 0 0-8 14.1L2.7 21.4l4.8-1.3A9.3 9.3 0 1 0 12 2.6Z"/><path d="M8.6 7.9c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2 0 .5-.1.7l-.5.6c-.1.2-.2.4 0 .6.4.8 1 1.5 1.8 2.1.6.4 1 .6 1.3.7.2.1.4 0 .6-.1l.6-.8c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .5-.2 1.3-.8 1.7-.6.4-1.3.6-2.2.4-1-.2-2.4-.8-3.9-2.1-1.7-1.5-2.4-3-2.6-3.8-.2-.9 0-1.7.5-2.4Z" fill="currentColor" stroke="none"/></svg> Comprar pelo WhatsApp</a></div>
+  </div>
+</section>
+
+<section class="sec sec--escuro" id="diferenciais">
+  <div class="wrap">
+    <div class="head"><p class="kicker reveal">Por que a Toda Moça</p><h2 class="title reveal d2">Uma experiência que faz diferença.</h2></div>
+    <ul class="difs"><li class="dif reveal d1"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="5" width="16.8" height="15.2" rx="1"/><path d="M3.6 9.6h16.8M8 3v4M16 3v4"/></svg><h3>Desde 2010</h3><p>Vestindo momentos especiais em João Pessoa.</p></li><li class="dif reveal d2"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2c.6 4.6 2.2 6.2 6.8 6.8-4.6.6-6.2 2.2-6.8 6.8-.6-4.6-2.2-6.2-6.8-6.8 4.6-.6 6.2-2.2 6.8-6.8Z"/></svg><h3>Peças selecionadas</h3><p>Escolhidas com elegância, peça por peça.</p></li><li class="dif reveal d3"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.5 12 3.2l8.5 4.3v9L12 20.8l-8.5-4.3Z"/><path d="M3.5 7.5 12 11.8l8.5-4.3M12 11.8v9"/></svg><h3>Envio para todo o Brasil</h3><p>Compre de onde estiver e receba em casa.</p></li><li class="dif reveal d4"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v10.2H9.6L5.6 19v-3.3H4Z"/><path d="M8 9.6h8M8 12.2h5"/></svg><h3>Atendimento próximo</h3><p>Fale direto com a equipe pelo WhatsApp.</p></li><li class="dif reveal d5"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.4V20h16V9.4"/><path d="M3 9.4 4.6 4h14.8L21 9.4Z"/><path d="M9.6 20v-5.4h4.8V20"/></svg><h3>Loja em Mangabeira</h3><p>Um espaço para provar com calma.</p></li></ul>
+  </div>
+</section>
+
+<section class="sec sec--claro" id="loja">
+  <div class="wrap">
+    <div class="loja">
+      <figure class="moldura reveal-img"><div class="m-in"><img src="assets/img/marca/loja-interior.webp" alt="Interior da loja Toda Moça com balcão de mármore preto e logo na parede" width="1000" height="1333" loading="lazy" decoding="async"></div></figure>
+      <div class="loja-info">
+        <p class="kicker reveal">Loja física</p>
+        <h2 class="title reveal d2">Estamos esperando por você.</h2>
+        <a class="addr reveal d3" href="https://www.google.com/maps/search/?api=1&query=Toda%20Mo%C3%A7a%2C%20R.%20Josefa%20Taveira%2C%20933%20-%20Mangabeira%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058055-000" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.3s-6.6-6-6.6-11.1a6.6 6.6 0 0 1 13.2 0c0 5.1-6.6 11.1-6.6 11.1Z"/><circle cx="12" cy="10.2" r="2.4"/></svg><span>R. Josefa Taveira, 933 – Mangabeira<br>João Pessoa – PB, 58055-000</span></a>
+        <div class="hours reveal d3">
+          <div class="hours-h"><strong><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.8"/><path d="M12 7.2V12l3.2 2"/></svg> Horário de funcionamento</strong><span class="status" id="status">Confira o horário</span></div>
+          <ul id="hours"><li data-d="0"><span>Segunda</span><span>09:00 – 18:00</span></li><li data-d="1"><span>Terça</span><span>09:00 – 18:00</span></li><li data-d="2"><span>Quarta</span><span>09:00 – 18:00</span></li><li data-d="3"><span>Quinta</span><span>09:00 – 18:00</span></li><li data-d="4"><span>Sexta</span><span>09:00 – 18:00</span></li><li data-d="5"><span>Sábado</span><span>09:00 – 18:00</span></li><li data-d="6"><span>Domingo</span><span>09:00 – 17:00</span></li></ul>
+        </div>
+        <div class="btns reveal d4">
+          <a class="btn btn--preto" href="https://www.google.com/maps/dir/?api=1&destination=Toda%20Mo%C3%A7a%2C%20R.%20Josefa%20Taveira%2C%20933%20-%20Mangabeira%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058055-000" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.3s-6.6-6-6.6-11.1a6.6 6.6 0 0 1 13.2 0c0 5.1-6.6 11.1-6.6 11.1Z"/><circle cx="12" cy="10.2" r="2.4"/></svg> Como chegar</a>
+          <a class="btn btn--linha" href="https://wa.me/5583987488334?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Toda%20Mo%C3%A7a%20e%20quero%20visitar%20a%20loja%20em%20Mangabeira." target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6a9.3 9.3 0 0 0-8 14.1L2.7 21.4l4.8-1.3A9.3 9.3 0 1 0 12 2.6Z"/><path d="M8.6 7.9c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2 0 .5-.1.7l-.5.6c-.1.2-.2.4 0 .6.4.8 1 1.5 1.8 2.1.6.4 1 .6 1.3.7.2.1.4 0 .6-.1l.6-.8c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .5-.2 1.3-.8 1.7-.6.4-1.3.6-2.2.4-1-.2-2.4-.8-3.9-2.1-1.7-1.5-2.4-3-2.6-3.8-.2-.9 0-1.7.5-2.4Z" fill="currentColor" stroke="none"/></svg> Falar pelo WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="map reveal" id="mapa">
+      <div class="map-in">
+        <div class="map-stage">
+          <svg class="map-art" viewBox="0 0 1050 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="1050" height="400" fill="#EFE8E0"/>
+            <g fill="#E3D9CE"><rect x="20" y="20" width="170" height="110"/><rect x="230" y="20" width="190" height="110"/><rect x="460" y="20" width="150" height="110"/><rect x="700" y="20" width="180" height="110"/><rect x="920" y="20" width="120" height="110"/><rect x="20" y="175" width="170" height="95"/><rect x="230" y="175" width="190" height="95"/><rect x="460" y="175" width="150" height="95"/><rect x="700" y="175" width="110" height="95"/><rect x="850" y="175" width="190" height="95"/><rect x="20" y="315" width="170" height="80"/><rect x="230" y="315" width="190" height="80"/><rect x="460" y="315" width="150" height="80"/><rect x="700" y="315" width="180" height="80"/><rect x="920" y="315" width="120" height="80"/></g>
+            <g stroke="#FDFCFA" fill="none"><path d="M0 152H1050M0 292H1050" stroke-width="22"/><path d="M210 0V400M440 0V400M640 0V400M890 0V400" stroke-width="16"/></g>
+            <text x="900" y="145" fill="#A8968A" font-family="DM Sans,sans-serif" font-size="13" letter-spacing="3" text-anchor="middle">R. JOSEFA TAVEIRA</text>
+            <text x="330" y="285" fill="#A8968A" font-family="DM Sans,sans-serif" font-size="13" letter-spacing="3" text-anchor="middle">MANGABEIRA</text>
+          </svg>
+          <span class="map-pin"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.3s-6.6-6-6.6-11.1a6.6 6.6 0 0 1 13.2 0c0 5.1-6.6 11.1-6.6 11.1Z"/><circle cx="12" cy="10.2" r="2.4"/></svg></span>
+          <iframe title="Mapa da Toda Moça em Mangabeira, João Pessoa" data-src="https://maps.google.com/maps?q=Toda%20Mo%C3%A7a%2C%20R.%20Josefa%20Taveira%2C%20933%20-%20Mangabeira%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058055-000&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <div class="map-card">
+          <h3>Toda Moça</h3>
+          <p>R. Josefa Taveira, 933 – Mangabeira<br>João Pessoa – PB, 58055-000</p>
+          <div class="btns"><a class="btn btn--preto" href="https://www.google.com/maps/dir/?api=1&destination=Toda%20Mo%C3%A7a%2C%20R.%20Josefa%20Taveira%2C%20933%20-%20Mangabeira%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058055-000" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.3s-6.6-6-6.6-11.1a6.6 6.6 0 0 1 13.2 0c0 5.1-6.6 11.1-6.6 11.1Z"/><circle cx="12" cy="10.2" r="2.4"/></svg> Como chegar</a><a class="btn btn--linha" href="https://www.google.com/maps/search/?api=1&query=Toda%20Mo%C3%A7a%2C%20R.%20Josefa%20Taveira%2C%20933%20-%20Mangabeira%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058055-000" target="_blank" rel="noopener">Abrir no Google Maps</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--escuro final" id="contato">
+  <div class="wrap">
+    <img class="logo-f reveal" src="assets/img/marca/logo-branco.png" alt="Toda Moça" width="522" height="448" loading="lazy">
+    <h2 class="title reveal d2">Seu próximo momento especial merece o look certo.</h2>
+    <p class="reveal d3">Fale com a Toda Moça e encontre a peça ideal, em João Pessoa ou em qualquer lugar do Brasil.</p>
+    <a class="btn btn--claro reveal d4" href="https://wa.me/5583987488334?text=Ol%C3%A1%2C%20Toda%20Mo%C3%A7a%21%20Vim%20pelo%20site%20e%20quero%20ajuda%20para%20escolher%20meu%20pr%C3%B3ximo%20look." target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6a9.3 9.3 0 0 0-8 14.1L2.7 21.4l4.8-1.3A9.3 9.3 0 1 0 12 2.6Z"/><path d="M8.6 7.9c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2 0 .5-.1.7l-.5.6c-.1.2-.2.4 0 .6.4.8 1 1.5 1.8 2.1.6.4 1 .6 1.3.7.2.1.4 0 .6-.1l.6-.8c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .5-.2 1.3-.8 1.7-.6.4-1.3.6-2.2.4-1-.2-2.4-.8-3.9-2.1-1.7-1.5-2.4-3-2.6-3.8-.2-.9 0-1.7.5-2.4Z" fill="currentColor" stroke="none"/></svg> Fale com a Toda Moça</a>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div><img class="logo-ft" src="assets/img/marca/logo-preto.png" alt="Toda Moça" width="522" height="448" loading="lazy">
+        <div class="soc"><a href="https://www.instagram.com/todamoca/" target="_blank" rel="noopener" aria-label="Instagram da Toda Moça"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.4" cy="6.6" r=".9" fill="currentColor" stroke="none"/></svg></a><a href="https://www.tiktok.com/@tm_todamoca" target="_blank" rel="noopener" aria-label="TikTok da Toda Moça"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M14.2 3.2v11.6a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14.2 3.2c.4 2.6 2.2 4.4 4.8 4.6"/></svg></a><a href="https://wa.me/5583987488334?text=Ol%C3%A1%21%20Conheci%20a%20Toda%20Mo%C3%A7a%20pelo%20site%20e%20gostaria%20de%20conhecer%20as%20novidades." target="_blank" rel="noopener" aria-label="WhatsApp da Toda Moça"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6a9.3 9.3 0 0 0-8 14.1L2.7 21.4l4.8-1.3A9.3 9.3 0 1 0 12 2.6Z"/><path d="M8.6 7.9c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2 0 .5-.1.7l-.5.6c-.1.2-.2.4 0 .6.4.8 1 1.5 1.8 2.1.6.4 1 .6 1.3.7.2.1.4 0 .6-.1l.6-.8c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .5-.2 1.3-.8 1.7-.6.4-1.3.6-2.2.4-1-.2-2.4-.8-3.9-2.1-1.7-1.5-2.4-3-2.6-3.8-.2-.9 0-1.7.5-2.4Z" fill="currentColor" stroke="none"/></svg></a></div></div>
+      <div><h4>Navegação</h4><ul><li><a href="#marca">A marca</a></li><li><a href="#novidades">Novidades</a></li><li><a href="#clientes">Clientes</a></li><li><a href="#avaliacoes">Avaliações</a></li><li><a href="#loja">A loja</a></li></ul></div>
+      <div><h4>Contato</h4><ul><li><a href="https://wa.me/5583987488334?text=Ol%C3%A1%21%20Conheci%20a%20Toda%20Mo%C3%A7a%20pelo%20site%20e%20gostaria%20de%20conhecer%20as%20novidades." target="_blank" rel="noopener">WhatsApp (83) 98748-8334</a></li><li><a href="https://www.instagram.com/todamoca/" target="_blank" rel="noopener">Instagram @todamoca</a></li><li><a href="https://www.tiktok.com/@tm_todamoca" target="_blank" rel="noopener">TikTok @tm_todamoca</a></li></ul></div>
+      <div><h4>Endereço</h4><ul><li><a href="https://www.google.com/maps/search/?api=1&query=Toda%20Mo%C3%A7a%2C%20R.%20Josefa%20Taveira%2C%20933%20-%20Mangabeira%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058055-000" target="_blank" rel="noopener">R. Josefa Taveira, 933<br>Mangabeira, João Pessoa – PB<br>58055-000</a></li><li>Seg. a sáb.: 09:00 – 18:00<br>Dom.: 09:00 – 17:00</li></ul></div>
+    </div>
+    <div class="ftr-bot"><span>© <span id="ano">2026</span> Toda Moça. Todos os direitos reservados.</span><span>Enviamos para todo o Brasil</span></div>
+  </div>
+</footer>
+<a class="fab" id="fab" href="https://wa.me/5583987488334?text=Ol%C3%A1%21%20Conheci%20a%20Toda%20Mo%C3%A7a%20pelo%20site%20e%20gostaria%20de%20conhecer%20as%20novidades." target="_blank" rel="noopener" aria-label="Falar com a Toda Moça pelo WhatsApp"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6a9.3 9.3 0 0 0-8 14.1L2.7 21.4l4.8-1.3A9.3 9.3 0 1 0 12 2.6Z"/><path d="M8.6 7.9c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2 0 .5-.1.7l-.5.6c-.1.2-.2.4 0 .6.4.8 1 1.5 1.8 2.1.6.4 1 .6 1.3.7.2.1.4 0 .6-.1l.6-.8c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .5-.2 1.3-.8 1.7-.6.4-1.3.6-2.2.4-1-.2-2.4-.8-3.9-2.1-1.7-1.5-2.4-3-2.6-3.8-.2-.9 0-1.7.5-2.4Z" fill="currentColor" stroke="none"/></svg></a>
+
+<script>
+(() => {
+  const d = document, body = d.body, reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const intro = d.getElementById('intro');
+  const start = () => { intro.classList.add('out'); body.classList.remove('locked'); setTimeout(() => body.classList.add('ready'), 200); };
+  let seen = false; try { seen = sessionStorage.getItem('tm-intro') === '1'; sessionStorage.setItem('tm-intro','1'); } catch(e) {}
+  if (reduce || seen || location.hash) { intro.style.transition = 'none'; start(); } else { setTimeout(start, 2900); intro.addEventListener('click', start, {once:true}); }
+
+  const hdr = d.getElementById('hdr'), fab = d.getElementById('fab');
+  const onScroll = () => { hdr.classList.toggle('solid', scrollY > 60); fab.classList.toggle('show', scrollY > innerHeight * .6); };
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  const burger = d.getElementById('burger'), drawer = d.getElementById('drawer');
+  const setNav = o => { body.classList.toggle('nav-open', o); burger.setAttribute('aria-expanded', o); burger.setAttribute('aria-label', o ? 'Fechar menu' : 'Abrir menu'); body.style.overflow = o ? 'hidden' : ''; };
+  burger.addEventListener('click', () => setNav(!body.classList.contains('nav-open')));
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setNav(false)));
+  addEventListener('keydown', e => { if (e.key === 'Escape') setNav(false); });
+
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {rootMargin:'0px 0px -8% 0px', threshold:.08});
+  d.querySelectorAll('.reveal,.reveal-img').forEach(el => io.observe(el));
+
+  const lio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.querySelectorAll('img[data-src]').forEach(im => { im.src = im.dataset.src; im.removeAttribute('data-src'); }); lio.unobserve(e.target); } }), {rootMargin:'800px 0px'});
+  d.querySelectorAll('[data-carousel]').forEach(c => {
+    lio.observe(c);
+    const t = c.querySelector('.track'), bar = c.querySelector('.car-bar span');
+    const step = () => t.querySelector('.slide').getBoundingClientRect().width + parseFloat(getComputedStyle(t).columnGap || 16);
+    const go = dir => { const max = t.scrollWidth - t.clientWidth;
+      if (dir > 0 && t.scrollLeft >= max - 4) t.scrollTo({left:0}); else if (dir < 0 && t.scrollLeft <= 4) t.scrollTo({left:max}); else t.scrollBy({left: dir * step()}); };
+    c.querySelector('[data-prev]').addEventListener('click', () => go(-1));
+    c.querySelector('[data-next]').addEventListener('click', () => go(1));
+    const upd = () => { const max = t.scrollWidth - t.clientWidth, w = t.clientWidth / t.scrollWidth; bar.style.width = (w*100)+'%'; bar.style.left = (max > 0 ? t.scrollLeft / max * (1 - w) * 100 : 0) + '%'; };
+    t.addEventListener('scroll', upd, {passive:true}); addEventListener('resize', upd); upd();
+    t.addEventListener('keydown', e => { if (e.key === 'ArrowRight') { e.preventDefault(); go(1); } if (e.key === 'ArrowLeft') { e.preventDefault(); go(-1); } });
+    if (!reduce && !c.querySelector('video')) {
+      let hold = false, vis = false;
+      ['pointerenter','focusin','touchstart'].forEach(ev => c.addEventListener(ev, () => hold = true, {passive:true}));
+      ['pointerleave','focusout'].forEach(ev => c.addEventListener(ev, () => hold = false));
+      new IntersectionObserver(es => vis = es[0].isIntersecting).observe(c);
+      setInterval(() => { if (vis && !hold && !d.hidden) go(1); }, 4200);
+    }
+  });
+
+  const vio = new IntersectionObserver(es => es.forEach(e => { const v = e.target, card = v.parentElement;
+    if (e.isIntersecting && !card.dataset.user && !reduce) { v.preload = 'auto'; v.play().then(() => card.classList.remove('paused')).catch(() => card.classList.add('paused')); }
+    else { v.pause(); card.classList.add('paused'); } }), {threshold:.55});
+  d.querySelectorAll('.vcard video').forEach(v => { v.parentElement.classList.add('paused'); vio.observe(v); });
+  d.querySelectorAll('[data-vtoggle]').forEach(b => b.addEventListener('click', () => { const card = b.parentElement, v = card.querySelector('video');
+    if (v.paused) { delete card.dataset.user; v.play(); card.classList.remove('paused'); b.setAttribute('aria-label','Pausar vídeo'); }
+    else { card.dataset.user = '1'; v.pause(); card.classList.add('paused'); b.setAttribute('aria-label','Reproduzir vídeo'); } }));
+
+  const mapa = d.getElementById('mapa'), ifr = mapa.querySelector('iframe'); let blocked = false;
+  d.addEventListener('securitypolicyviolation', e => { if (/frame/.test(e.violatedDirective) && /google/.test(e.blockedURI)) { blocked = true; mapa.classList.remove('live'); ifr.remove(); } });
+  ifr.addEventListener('load', () => setTimeout(() => { if (!blocked && ifr.isConnected) mapa.classList.add('live'); }, 400));
+  new IntersectionObserver((es, o) => { if (es[0].isIntersecting) { ifr.src = ifr.dataset.src; o.disconnect(); } }, {rootMargin:'400px'}).observe(mapa);
+
+  const now = new Date(Date.now() + (new Date().getTimezoneOffset() - 180) * 60000);
+  const dow = now.getDay(), mins = now.getHours() * 60 + now.getMinutes();
+  const [o, c] = dow === 0 ? [540, 1020] : [540, 1080];
+  const li = d.querySelector(`#hours li[data-d="${(dow + 6) % 7}"]`); if (li) li.classList.add('today');
+  const st = d.getElementById('status'), open = mins >= o && mins < c;
+  st.textContent = open ? 'Aberto agora' : 'Fechado agora'; st.classList.toggle('open', open);
+  d.getElementById('ano').textContent = now.getFullYear();
+})();
+</script>
+</body>
+</html>
